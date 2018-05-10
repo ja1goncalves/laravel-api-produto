@@ -31,6 +31,6 @@ Route::get('marcas/{id}', 'MarcasController@show');
 Route::get('produtos/{id}', 'ProdutosController@show');
 
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
+Route::middleware('auth:api')->get('/user', function (Request $request){
     return $request->user();
 });

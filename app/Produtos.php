@@ -15,4 +15,8 @@ class Produtos extends Model
     public function marca(){
         return $this->belongsTo('App\Marca');
     }
+
+    public function categories(){
+        return $this->belongsToMany('App\Categories', 'categories_products');
+    }
 }
